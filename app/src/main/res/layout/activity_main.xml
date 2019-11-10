@@ -11,6 +11,9 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
@@ -72,10 +75,60 @@
                 android:layout_height="wrap_content"
                 android:text="Python"
                 android:id="@+id/pythonCB"
+                android:layout_marginStart="5dp"
                 android:layout_toEndOf="@id/javaCB"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:layout_marginStart="5dp"
+                android:id="@+id/cCB"
+                android:layout_toEndOf="@id/pythonCB"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PHP"
+                android:layout_toEndOf="@id/cCB"
+                android:layout_marginStart="5dp"
+                />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:padding="5dp"
+            android:background="#64FFDA"
+            android:textColor="#000"
+            android:gravity="center"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/districtTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="District"
+                android:padding="5dp"
+                android:textColor="#000"
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/districtTV"
+                android:layout_centerVertical="true"
+                android:id="@+id/districtSpinner"
                 />
 
         </RelativeLayout>
+
+
+
     </LinearLayout>
 
 

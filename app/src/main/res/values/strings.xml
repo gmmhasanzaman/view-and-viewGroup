@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">All Input Type</string>
+    <string-array name="district_array">
+        <item>Dhaka</item>
+        <item>Khulna</item>
+    </string-array>
 </resources>
